@@ -491,5 +491,32 @@
     <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
     <script src="./scripts/aos.min.js?ver=1.2.0"></script>
     <script src="./scripts/main.js?ver=1.2.0"></script>
+
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get all progress bars
+    var progressBars = document.querySelectorAll(".progress-bar");
+
+    // Loop through each progress bar
+    progressBars.forEach(function (bar) {
+      // Get the percentage value from the 'aria-valuenow' attribute
+      var percentage = parseInt(bar.getAttribute("aria-valuenow"));
+
+      // Set the color based on the percentage
+      if (percentage >= 90) {
+        // Green color for percentages greater than or equal to 90
+        bar.style.backgroundColor = "#28a745";
+      } else if (percentage >= 70) {
+        // Yellow color for percentages between 70 and 89
+        bar.style.backgroundColor = "#ffc107";
+      } else {
+        // Red color for percentages less than 70
+        bar.style.backgroundColor = "#dc3545";
+      }
+    });
+  });
+</script>
+
+    
   </body>
 </html>
