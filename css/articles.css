@@ -1,18 +1,22 @@
+/* Style for the article buttons */
 .article-buttons .article-btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 24px;
   margin: 5px;
-  background-color: #007bff; /* Change to your desired button color */
+  background-color: #333; /* Dark gray for the button */
   color: #fff;
   text-decoration: none;
-  border: none;
-  border-radius: 5px;
+  border: 2px solid #333; /* Border matches button color */
+  border-radius: 30px; /* Rounded border */
+  font-size: 16px; /* Larger font size */
+  font-weight: bold; /* Bold font weight */
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition */
 }
 
 .article-buttons .article-btn:hover {
-  background-color: #0056b3; /* Change to your desired hover color */
+  background-color: #222; /* Darker shade of gray on hover */
+  border-color: #222; /* Darker border on hover */
 }
 
 
