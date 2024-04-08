@@ -421,24 +421,6 @@
           </div>
   </div>
 </div>
-
-<div class="section px-2 px-lg-4 pt-5" id="Activities">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="marker marker-center">Activities</h2>
-    </div>
-    <div class="slideshow-container">
-      <div class="grid bp-gallery pb-3" data-aos="zoom-in-up" data-aos-delay="100">
-        <div class="grid-sizer"></div>
-        </div>
-      <div class="navigation">
-        <a class="arrow left" onclick="plusSlide(-1)">&#10094;</a>
-        <a class="arrow right" onclick="plusSlide(1)">&#10095;</a>
-      </div>
-    </div>
-  </div>
-</div>
-
         
 <div class="section px-2 px-lg-4 pt-5 mb-5" id="My Articles">
  <div class="text-center mb-5">
@@ -481,28 +463,6 @@
     <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
     <script src="./scripts/aos.min.js?ver=1.2.0"></script>
     <script src="./scripts/main.js?ver=1.2.0"></script>  
-<script>
-  var slideIndex = 1;
-  showSlides(slideIndex);
-
-  function plusSlide(n) {
-    showSlides(slideIndex += n);
-  }
-
-  function showSlides(n) {
-    var slides = document.getElementsByClassName("grid-item");
-    if (n > slides.length) {
-      slideIndex = 1;
-    }
-    if (n < 1) {
-      slideIndex = slides.length;
-    }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slides[slideIndex - 1].style.display = "block";
-  }
-</script>
     
   </body>
 </html>
