@@ -431,20 +431,7 @@
     <a href="https://medium.com/@ramzi.sheishaa/navigating-inflation-types-measures-and-economic-implications-482e37ef2914" target="_blank" class="btn article-btn">Navigating Inflation</a>
     <!-- Add more buttons for additional articles as needed -->
   </div>
-</div>
-
-<div class="section px-3 px-lg-4 pt-5" id="experience">
-  <div class="slideshow-container"> 
-    <div class="slide">
-    <img src="images/portfolio/Best-Member.jpg" alt="Image 1">
-  </div>
-  <div class="slide">
-    </div>
-  </div>
-  </div>
-
-
-        
+</div>       
 
 <footer class="pt-4 pb-4 text-center bg-light">
   <div class="container">
@@ -476,34 +463,5 @@
     <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
     <script src="./scripts/aos.min.js?ver=1.2.0"></script>
     <script src="./scripts/main.js?ver=1.2.0"></script>    
-
-    <script>
-  const slideContainer = document.querySelector('.slideshow-container');
-  const slides = document.querySelectorAll('.slide');
-  let currentSlide = 0;
-
-  // Function to show the current slide
-  function showSlide(n) {
-    slides.forEach(slide => slide.style.display = 'none');
-    slides[n].style.display = 'block';
-  }
-
-  // Start the slideshow with the first slide
-  showSlide(currentSlide);
-
-  // Function to move to the next slide
-  function nextSlide() {
-    currentSlide++;
-    if (currentSlide >= slides.length) {
-      currentSlide = 0;
-    }
-    showSlide(currentSlide);
-  }
-
-  // Set interval to change slides automatically (optional)
-  setInterval(nextSlide, 3000); // Change 3000 to adjust time between slides in milliseconds
-
-</script>
-
   </body>
 </html>
