@@ -19,6 +19,7 @@
     <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
     <link href="./css/main.css?ver=1.2.0" rel="stylesheet">
      <link rel="stylesheet" href="css/articles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <noscript>
       <style type="text/css">
         [data-aos] {
@@ -48,7 +49,48 @@
       });
     });
   });
-</script>  
+</script>
+    
+    <style>
+        .swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .swiper-slide {
+            width: 25%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-slide img {
+            max-width: 100%;
+            height: auto;
+        }
+        .swiper-pagination {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            border-radius: 10px;
+            background-color: #fff;
+            opacity: 0.5;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            background-color: #007bff;
+        }
+    </style>
+    
   </head>
   <body id="top">
     <header class="bg-light">
@@ -432,6 +474,31 @@
     <!-- Add more buttons for additional articles as needed -->
   </div>
 </div>       
+
+
+
+
+<div class="page-content">
+    <!-- Your page content code -->
+    <div class="section px-2 px-lg-4 pt-5" id="Activities">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="marker marker-center">Activities</h2>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/portfolio/Best-Member.jpg" alt="First Month in ENACTUS"><p>Projct Management Member</p></div>
+                    <div class="swiper-slide"><img src="images/portfolio/CMA.jpg" alt="CMA Event Preperation"><p>Al-Azhar University 2022</p></div>
+                    <div class="swiper-slide"><img src="images/portfolio/Interviews.jpg" alt="Interviews For The New Season"><p>Season 2022</p></div>
+                    <!-- Add more images and descriptions here -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
         
 <footer class="pt-4 pb-4 text-center bg-light">
   <div class="container">
@@ -464,5 +531,18 @@
     <script src="./scripts/aos.min.js?ver=1.2.0"></script>
     <script src="./scripts/main.js?ver=1.2.0"></script>  
 
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
+    
   </body>
 </html>
