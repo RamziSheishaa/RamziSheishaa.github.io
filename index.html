@@ -19,9 +19,6 @@
     <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
     <link href="./css/main.css?ver=1.2.0" rel="stylesheet">
      <link rel="stylesheet" href="css/articles.css">
-
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-
     
     <noscript>
       <style type="text/css">
@@ -52,78 +49,6 @@
     });
   });
 </script>
-
-
-
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .section {
-      padding: 60px 0;
-    }
-    .marker {
-      font-size: 2rem;
-    }
-    .project-thumbnail {
-      max-width: 100%;
-      height: auto;
-    }
-    .project-btn {
-      text-align: left;
-      width: 100%;
-      border: none;
-      padding: 0;
-      background: none;
-    }
-    .project-btn:focus {
-      outline: none;
-    }
-    .project-btn .project-details {
-      display: none;
-      position: fixed;
-      z-index: 1;
-      padding-top: 100px;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgb(0,0,0);
-      background-color: rgba(0,0,0,0.9);
-    }
-    .project-btn .project-details-content {
-      margin: auto;
-      display: block;
-      width: 80%;
-      max-width: 800px;
-      animation-name: zoom;
-      animation-duration: 0.6s;
-    }
-    .project-btn .project-details-content img {
-      width: 100%;
-      height: auto;
-    }
-    @keyframes zoom {
-      from {transform:scale(0)}
-      to {transform:scale(1)}
-    }
-    .close {
-      position: absolute;
-      top: 50px;
-      right: 50px;
-      color: #f1f1f1;
-      font-size: 40px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    .close:hover,
-    .close:focus {
-      color: #bbb;
-      text-decoration: none;
-      cursor: pointer;
-    }
-  </style>  
-
     
   </head>
   <body id="top">
@@ -330,12 +255,60 @@
 
 
 
-
-
-
 <!-- Projects Section -->
 <div class="section px-3 px-lg-4 pt-5" id="projects">
   <div class="container">
+    <style>
+      /* Add specific styles for this section */
+      .project-thumbnail {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .project-thumbnail:hover {
+        transform: scale(1.05);
+      }
+
+      .project-details {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-top: 50px;
+      }
+
+      .project-details-content {
+        background-color: #fefefe;
+        margin: 5% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 800px;
+      }
+
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+
     <div class="text-center mb-5">
       <h2 class="marker marker-center">Projects</h2>
     </div>
@@ -391,15 +364,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -632,19 +596,6 @@
     <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
     <script src="./scripts/aos.min.js?ver=1.2.0"></script>
     <script src="./scripts/main.js?ver=1.2.0"></script>  
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-<script>
-  function openProjectModal(modalId) {
-    document.getElementById(modalId).style.display = "block";
-  }
-
-  function closeProjectModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
-  }
-</script>
-        
 
   </body>
 </html>
