@@ -269,3 +269,28 @@ footer a:not(.nav-link) {
 .entry-title a {
   text-decoration: none;
 }
+
+
+
+/* Add this to your main.css or a dedicated CSS file */
+.project-item {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+}
+
+.project-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Optional: Customize modal styles */
+.modal-body {
+  max-height: calc(100vh - 200px); /* Adjust modal body height as needed */
+  overflow-y: auto;
+}
+
