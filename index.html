@@ -19,6 +19,9 @@
     <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
     <link href="./css/main.css?ver=1.2.0" rel="stylesheet">
      <link rel="stylesheet" href="css/articles.css">
+
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
     
     <noscript>
       <style type="text/css">
@@ -250,7 +253,113 @@
     </div>
   </section>
 
-      
+
+
+
+
+
+
+
+
+
+
+<!-- Projects Section -->
+<div class="section px-3 px-lg-4 pt-5" id="projects">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="marker marker-center">Projects</h2>
+    </div>
+    <div class="text-center">
+      <p class="mx-auto mb-3" style="max-width: 600px">Explore some of the projects I've worked on. Click on project names to view details.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <button type="button" class="btn btn-outline-dark btn-lg project-btn" data-bs-toggle="modal" data-bs-target="#project1Modal">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-file-earmark-code" viewBox="0 0 16 16">
+            <path d="M2 0.5a0.5 0.5 0 0 1 0-1h12a0.5 0.5 0 0 1 0 1H2zM2.5 2A0.5 0.5 0 0 0 2 2.5v11a0.5 0.5 0 0 0 0 1h11a0.5 0.5 0 0 0 0-1V2.5a0.5 0.5 0 0 0-0.5-0.5h-11zM6 5.854a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v.292a.5.5 0 0 1-.146.354l-2.5 2.5a.5.5 0 0 1-.708 0l-2.5-2.5A.5.5 0 0 1 6 6.146V5.854z"/>
+          </svg>
+          Project 1
+        </button>
+      </div>
+      <div class="col-md-6">
+        <button type="button" class="btn btn-outline-dark btn-lg project-btn" data-bs-toggle="modal" data-bs-target="#project2Modal">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-file-earmark-code" viewBox="0 0 16 16">
+            <path d="M2 0.5a0.5 0.5 0 0 1 0-1h12a0.5 0.5 0 0 1 0 1H2zM2.5 2A0.5 0.5 0 0 0 2 2.5v11a0.5 0.5 0 0 0 0 1h11a0.5 0.5 0 0 0 0-1V2.5a0.5 0.5 0 0 0-0.5-0.5h-11zM6 5.854a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v.292a.5.5 0 0 1-.146.354l-2.5 2.5a.5.5 0 0 1-.708 0l-2.5-2.5A.5.5 0 0 1 6 6.146V5.854z"/>
+          </svg>
+          Project 2
+        </button>
+      </div>
+      <!-- Add more buttons for additional projects -->
+    </div>
+  </div>
+</div>
+
+<!-- Project 1 Modal -->
+<div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project1ModalLabel">Project 1 Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5>Description:</h5>
+        <p>Details about Project 1, including objectives, technologies used, and outcomes.</p>
+        <h5>Video:</h5>
+        <div class="embed-responsive embed-responsive-16by9 mb-3">
+          <video controls class="embed-responsive-item">
+            <source src="videos/project1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <h5>Files:</h5>
+        <a href="files/project1_files.zip" class="btn btn-outline-dark">Download Project Files</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project 2 Modal -->
+<div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project2ModalLabel">Project 2 Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5>Description:</h5>
+        <p>Details about Project 2, including objectives, technologies used, and outcomes.</p>
+        <h5>Video:</h5>
+        <div class="embed-responsive embed-responsive-16by9 mb-3">
+          <video controls class="embed-responsive-item">
+            <source src="videos/project2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <h5>Files:</h5>
+        <a href="files/project2_files.zip" class="btn btn-outline-dark">Download Project Files</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 <div class="section px-3 px-lg-4 pt-5" id="experience">
   <div class="container-narrow">
@@ -477,6 +586,9 @@
     <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
     <script src="./scripts/aos.min.js?ver=1.2.0"></script>
     <script src="./scripts/main.js?ver=1.2.0"></script>  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
 
   </body>
 </html>
