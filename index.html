@@ -255,117 +255,6 @@
 
 
 
-<!-- Projects Section -->
-<div class="section px-3 px-lg-4 pt-5" id="projects">
-  <div class="container">
-    <style>
-      /* Add specific styles for this section */
-      .project-thumbnail {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s ease-in-out;
-      }
-
-      .project-thumbnail:hover {
-        transform: scale(1.05);
-      }
-
-      .project-details {
-        display: none;
-        position: fixed;
-        z-index: 9999;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.5);
-        padding-top: 50px;
-      }
-
-      .project-details-content {
-        background-color: #fefefe;
-        margin: 5% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-        max-width: 800px;
-      }
-
-      .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-      }
-
-      .close:hover,
-      .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-      }
-    </style>
-
-    <div class="text-center mb-5">
-      <h2 class="marker marker-center">Projects</h2>
-    </div>
-    <div class="text-center">
-      <p class="mx-auto mb-3" style="max-width: 600px">Explore some of the projects I've worked on. Click on thumbnails for more details.</p>
-    </div>
-    <div class="row">
-      <div class="col-md-6 col-lg-4 mb-4">
-        <button type="button" class="project-btn" onclick="openProjectModal('project1Modal')">
-          <img src="images/projects/Call Center.jpg" alt="Project 1 Thumbnail" class="project-thumbnail">
-          <div class="project-details" id="project1Modal">
-            <div class="project-details-content">
-              <span class="close" onclick="closeProjectModal('project1Modal')">&times;</span>
-              <h5>Description:</h5>
-              <p>Details about Project 1, including objectives, technologies used, and outcomes.</p>
-              <h5>Video:</h5>
-              <div class="embed-responsive embed-responsive-16by9 mb-3">
-                <video controls class="embed-responsive-item">
-                  <source src="images/projects/CallCenter.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <h5>Files:</h5>
-              <a href="files/project1_files.zip" class="btn btn-outline-dark">Download Project Files</a>
-            </div>
-          </div>
-        </button>
-        <p class="text-center mt-2 mb-0">Call Center Dashboard</p>
-      </div>
-      <div class="col-md-6 col-lg-4 mb-4">
-        <button type="button" class="project-btn" onclick="openProjectModal('project2Modal')">
-          <img src="images/projects/Churn.jpg" alt="Project 2 Thumbnail" class="project-thumbnail">
-          <div class="project-details" id="project2Modal">
-            <div class="project-details-content">
-              <span class="close" onclick="closeProjectModal('project2Modal')">&times;</span>
-              <h5>Description:</h5>
-              <p>Details about Project 2, including objectives, technologies used, and outcomes.</p>
-              <h5>Video:</h5>
-              <div class="embed-responsive embed-responsive-16by9 mb-3">
-                <video controls class="embed-responsive-item">
-                  <source src="images/projects/Retention.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <h5>Files:</h5>
-              <a href="files/project2_files.zip" class="btn btn-outline-dark">Download Project Files</a>
-            </div>
-          </div>
-        </button>
-        <p class="text-center mt-2 mb-0">Churn and Retention Dashboard</p>
-      </div>
-      <!-- Add more columns for additional projects -->
-    </div>
-  </div>
-</div>
-
-
 
 
 
@@ -596,6 +485,18 @@
     <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
     <script src="./scripts/aos.min.js?ver=1.2.0"></script>
     <script src="./scripts/main.js?ver=1.2.0"></script>  
+
+     <script>
+    function openProjectModal(modalId) {
+      var modal = document.getElementById(modalId);
+      modal.style.display = "block";
+    }
+
+    function closeProjectModal(modalId) {
+      var modal = document.getElementById(modalId);
+      modal.style.display = "none";
+    }
+  </script>
 
   </body>
 </html>
