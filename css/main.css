@@ -298,11 +298,13 @@ footer a:not(.nav-link) {
 .custom-btn {
     background-color: #333333;
     color: #ffffff;
-    padding: 12px 20px; /* Adjust padding as needed */
-    border-radius: 25px; /* Rounded corners */
+    padding: 8px 16px; /* Adjust padding as needed */
+    border-radius: 20px; /* Rounded corners */
     transition: background-color 0.3s, color 0.3s;
     text-align: center;
-    display: block;
+    display: inline-block;
+    font-size: 14px; /* Adjust font size */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font stack */
 }
 
 .custom-btn:hover,
@@ -314,6 +316,6 @@ footer a:not(.nav-link) {
 
 .custom-btn i {
     margin-left: 5px; /* Space between text and icon */
+    font-size: 12px; /* Adjust icon size */
 }
-
 
