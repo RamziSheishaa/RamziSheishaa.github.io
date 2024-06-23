@@ -294,3 +294,26 @@ footer a:not(.nav-link) {
   overflow-y: auto;
 }
 
+
+.custom-btn {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 12px 20px; /* Adjust padding as needed */
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    display: block;
+}
+
+.custom-btn:hover,
+.custom-btn:focus {
+    background-color: #555555; /* Darken background on hover */
+    color: #ffffff; /* Maintain text color */
+    text-decoration: none; /* Remove underline */
+}
+
+.custom-btn i {
+    margin-left: 5px; /* Space between text and icon */
+}
+
+
