@@ -1,31 +1,25 @@
+/* Reset horizontal overflow and enable smooth scrolling */
 html, body {
   overflow-x: hidden;
 }
 
-/**
- * Enable smooth scrolling on the whole document
- */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
-/**
- * Disable smooth scrolling when users have prefers-reduced-motion enabled
- */
+/* Adjust scroll behavior based on user preference */
 @media screen and (prefers-reduced-motion: reduce) {
   html {
-    scroll-behavior: auto;
+    scroll-behavior: auto; /* Disable smooth scrolling */
   }
 }
 
-/**
- * Add .section to every anchored element for scroll margin
- */
+/* Add scroll margin to anchored elements */
 .section {
   scroll-margin-top: 2rem;
 }
 
-/* Header */
+/* Header styles */
 .site-title {
   font-size: 1.5rem;
   font-weight: 700;
@@ -33,43 +27,27 @@ html {
   text-decoration: none;
 }
 
-@media (min-width: 48em) {
-  .site-title {
-    float: left;
-  }
-}
-
+/* Navigation links */
 .nav-link {
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.8) !important;
+  color: rgba(0, 0, 0, 0.8);
 }
 
+/* Social navigation links */
 .social-nav .nav-link {
   padding: 0 0.5rem;
   font-size: 1.1rem;
   line-height: 2.5rem;
 }
 
+/* Hover and active states for navigation links */
 .nav-link:hover,
 .nav-link:focus,
 .active .nav-link {
-  color: rgba(0, 0, 0, 0.6) !important;
+  color: rgba(0, 0, 0, 0.6);
 }
 
-/* Hero (intro) section */
-.intro-title {
-  font-weight: 800;
-}
-
-@-webkit-keyframes animateWave {
-  0% {
-    transform: scale(1, 0);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
-}
-
+/* Animation for wave background */
 @keyframes animateWave {
   0% {
     transform: scale(1, 0);
@@ -79,40 +57,20 @@ html {
   }
 }
 
+/* Wave background */
 .wave-bg {
   display: block;
   height: 220px;
   width: 100%;
   min-width: 600px;
   transform-origin: top;
-  -webkit-animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
-          animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
   background-image: url("../images/wave-bg.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-img.avatar {
-  border-radius: 30px;
-}
-
-/* Masonary grid for portfolio */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-/* Grid Item */
-.grid-sizer,
-.grid-item {
-  width: 100%;
-}
-
-.grid-item {
-  padding-bottom: 12px;
-}
-
+/* Responsive grid for portfolio */
 @media (min-width: 48em) {
   .grid-sizer,
   .grid-item {
@@ -124,17 +82,7 @@ img.avatar {
   }
 }
 
-.grid-item img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-}
-
-/* Portfolio */
-.portolio-section .container {
-  padding: 0;
-}
-
+/* Styles for portfolio items */
 .portfolio-item {
   position: relative;
   overflow: hidden;
@@ -142,9 +90,9 @@ img.avatar {
   margin: 0;
 }
 
+/* Caption styles for portfolio items */
 .portfolio-item figcaption {
   position: absolute;
-  top: auto;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -173,16 +121,7 @@ img.avatar {
   transform: translate3d(0, 0, 0);
 }
 
-/* Portolio Caption */
-#bp_container .bp-xc {
-  background: #F6E05E !important;
-}
-
-#bp_caption a {
-  text-decoration: none;
-}
-
-/* Footer section */
+/* Footer links */
 footer a:not(.nav-link) {
   color: inherit;
   font-weight: 600;
@@ -190,7 +129,7 @@ footer a:not(.nav-link) {
   cursor: pointer;
 }
 
-/* Scroll Top */
+/* Scroll to top button */
 #scrolltop {
   display: block;
   visibility: hidden;
@@ -221,21 +160,18 @@ footer a:not(.nav-link) {
 }
 
 .hover-effect {
-  transition: transform .18s ease-in-out;
+  transition: transform 0.18s ease-in-out;
 }
 
 .hover-effect:hover {
   transform: translateY(-2px);
 }
 
+/* Marker styles */
 .marker {
   position: relative;
   display: inline;
   width: auto;
-}
-
-.marker-center {
-  padding-right: 0;
 }
 
 .marker:after {
@@ -249,16 +185,7 @@ footer a:not(.nav-link) {
   background-repeat: no-repeat;
 }
 
-.marker-center:after {
-  bottom: -30px;
-  left: 50%;
-  margin-left: -60px;
-}
-
 @media (max-width: 575.98px) {
-  .marker {
-    padding-right: 0;
-  }
   .marker:after {
     bottom: -30px;
     left: 50%;
@@ -270,52 +197,28 @@ footer a:not(.nav-link) {
   text-decoration: none;
 }
 
-
-
-/* Add this to your main.css or a dedicated CSS file */
-.project-item {
-  position: relative;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-}
-
-.project-item:hover {
-  transform: translateY(-5px);
-}
-
-.project-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-/* Optional: Customize modal styles */
-.modal-body {
-  max-height: calc(100vh - 200px); /* Adjust modal body height as needed */
-  overflow-y: auto;
-}
-
-
+/* Customize buttons */
 .custom-btn {
-    background-color: #333333;
-    color: #ffffff;
-    padding: 8px 16px; /* Adjust padding as needed */
-    border-radius: 20px; /* Rounded corners */
-    transition: background-color 0.3s, color 0.3s;
-    text-align: center;
-    display: inline-block;
-    font-size: 14px; /* Adjust font size */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font stack */
+  background-color: #333333;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer; /* Ensure consistent cursor for buttons */
 }
 
 .custom-btn:hover,
 .custom-btn:focus {
-    background-color: #555555; /* Darken background on hover */
-    color: #ffffff; /* Maintain text color */
-    text-decoration: none; /* Remove underline */
+  background-color: #555555;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .custom-btn i {
-    margin-left: 5px; /* Space between text and icon */
-    font-size: 12px; /* Adjust icon size */
+  margin-left: 5px;
+  font-size: 12px;
 }
-
