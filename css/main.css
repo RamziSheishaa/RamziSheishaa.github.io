@@ -218,6 +218,54 @@ footer a:not(.nav-link) {
   text-decoration: none;
 }
 
+
+
+
+/* Accessibility enhancements */
+.nav-link:focus,
+.custom-btn:focus {
+  outline: 2px solid #333333;
+  outline-offset: 2px;
+}
+
+/* Enhanced button transition and hover effect */
+.custom-btn {
+  transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+}
+
+.custom-btn:hover,
+.custom-btn:focus {
+  transform: translateY(-2px); /* Lift effect on hover/focus */
+}
+
+/* Fluid typography example */
+.site-title {
+  font-size: 1.5rem; /* Base font size */
+  font-size: calc(1.5rem + 0.5vw); /* Fluid font size */
+}
+
+/* Enhanced grid adjustment */
+@media (min-width: 768px) {
+  .grid-item {
+    padding: 12px;
+  }
+}
+
+/* Subtle box-shadow on hover */
+.portfolio-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Example box-shadow */
+}
+
+/* Subtle animation on wave background */
+.wave-bg {
+  animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+/* Enhanced overlay transition */
+.portfolio-item figcaption {
+  transition: transform 0.35s ease-out, opacity 0.35s ease-out;
+}
+
 .custom-btn i {
   margin-left: 5px;
   font-size: 12px;
