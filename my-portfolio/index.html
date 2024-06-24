@@ -9,6 +9,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/svg+xml" href="person.svg">
+    <style>
+        /* Custom CSS for mobile view */
+        @media (max-width: 576px) {
+            .card-text {
+                font-size: 14px; /* Adjust font size for better readability */
+            }
+            .btn {
+                width: 100%; /* Ensure buttons take full width on mobile */
+                margin-bottom: 10px; /* Add margin to space out buttons */
+            }
+            .line-1 {
+                white-space: nowrap; /* Prevent text from wrapping */
+                overflow: hidden; /* Hide overflowing text */
+                text-overflow: ellipsis; /* Add ellipsis to indicate overflow */
+            }
+        }
+
+        /* Additional custom styles */
+        .anim-typewriter {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: 0.15em;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: black; }
+        }
+
+        /* Modal adjustments for mobile view */
+        .modal-dialog {
+            max-width: 100%;
+            margin: 0;
+        }
+
+        .modal-content {
+            border-radius: 0;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -33,9 +80,8 @@
     <div class="container mt-5">
         <header class="text-center animate__animated animate__fadeInDown">
             <h1>Welcome to My Portfolio</h1>
-            <br></br> 
+            <br>
             <p class="line-1 anim-typewriter">Explore my projects, writings and other things.</p>
-            
         </header>
 
         <section id="projects" class="mt-5 animate__animated animate__fadeInUp">
@@ -58,7 +104,7 @@
                         <img src="Churn.jpg" class="card-img-top" alt="Customer Risk Analysis">
                         <div class="card-body">
                             <h5 class="card-title">Customer Risk Analysis</h5>
-                            <p class="card-text">Defined relevant KPIs for retention management, and developed visualizations for the retention manager, focusing on these KPIs. also I ensured the dashboard effectively reflects the defined KPIs to aid decision-making.</p>
+                            <p class="card-text">Defined relevant KPIs for retention management, and developed visualizations for the retention manager, focusing on these KPIs. Also, I ensured the dashboard effectively reflects the defined KPIs to aid decision-making.</p>
                             <button class="btn btn-primary rounded-pill" data-toggle="modal" data-target="#project2Modal">View Project</button>
                         </div>
                     </div>
@@ -69,8 +115,7 @@
                         <img src="Diversity0.jpg" class="card-img-top" alt="Project 3">
                         <div class="card-body">
                             <h5 class="card-title">Diversity and Inclusion Dashboard (HR)</h5>
-                            <p class="card-text">Created visualizations to represent HR data, particularly focusing on gender-related KPIs, and
-                                identified and discussed potential root causes for the slow progress in achieving gender balance at the executive management level.</p>
+                            <p class="card-text">Created visualizations to represent HR data, particularly focusing on gender-related KPIs, and identified and discussed potential root causes for the slow progress in achieving gender balance at the executive management level.</p>
                             <button class="btn btn-primary rounded-pill" data-toggle="modal" data-target="#project3Modal">View Project</button>
                         </div>
                     </div>
@@ -94,16 +139,6 @@
                         <source src="CallCenter.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    
-                <!--<div class="mt-3">
-                        <h5>Images</h5>
-                        <img src="assets/projects/project1_image1.jpg" class="img-fluid mb-2" alt="Project 1 Image 1">
-                        <img src="assets/projects/project1_image2.jpg" class="img-fluid" alt="Project 1 Image 2">
-                    </div>
-                    <div class="mt-3">
-                        <h5>Files</h5>
-                        <a href="assets/projects/project1_file.pdf" class="btn btn-secondary rounded-pill" download>Download File</a>
-                    </div> -->
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary rounded-pill" data-dismiss="modal">Close</button>
@@ -158,10 +193,6 @@
         </div>
     </div>
 
-
-
-
-
     <section id="medium-articles" class="mt-5 animate__animated animate__fadeInUp">
         <div class="container">
             <h2 class="text-center">Medium Articles</h2>
@@ -191,8 +222,6 @@
         </div>
     </section>
     
-    
-
     <footer class="pt-4 pb-4 text-center bg-light">
         <div class="container">
           <div class="my-3">
@@ -205,7 +234,7 @@
                   <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/ramziofficial0" title="Facebook" target="_blank"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a></li>
                   <li class="nav-item"><a class="nav-link" href="https://instagram.com/ramzi_ix" title="Instagram" target="_blank"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a></li>
                   <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/ramzialsayed" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="https://wa.me/+201091461512" title="Whatsapp" target="_blank"><i class="fab fa-whatsapp"></i><span class="menu-title sr-only">Behance</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://wa.me/+201091461512" title="Whatsapp" target="_blank"><i class="fab fa-whatsapp"></i><span class="menu-title sr-only">Whatsapp</span></a></li>
                 </ul>
               </nav>
             </div>
@@ -213,7 +242,7 @@
           <div class="text-small text-secondary">
             <div class="mb-1">&copy; Ramzi Alsayed Sheishaa. All rights reserved.</div>
         </div>
-      </footer></div>
+      </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
