@@ -90,32 +90,57 @@ body {
 /* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
-.line-1{
+.line-1 {
     position: relative;
-    top: 50%;  
+    top: 50%;
     width: 24em;
     margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
+    border-right: 2px solid rgba(255, 255, 255, .75);
     font-size: 140%;
     text-align: center;
-    white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);    
+    transform: translateY(-50%);
 }
 
 /* Animation */
-.anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+.anim-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
 }
 
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%; /* Adjust to 100% to allow wrapping */
+    }
 }
 
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
 
+/* Media query for smaller screens (adjust breakpoint as needed) */
+@media (max-width: 767px) {
+    .line-1 {
+        font-size: 100%; /* Adjust font size for readability */
+        width: 100%; /* Allow full width for wrapping */
+        border-right: none; /* Remove border for better mobile view */
+        padding-right: 10px; /* Optional: Add padding for better spacing */
+    }
+
+    @keyframes typewriter {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%; /* Adjust to 100% to allow wrapping */
+        }
+    }
+}
